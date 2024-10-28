@@ -44,6 +44,16 @@ const content = [
         </div>
       ),
     },
+    {
+      title: "Cutting-Edge Curriculum",
+      description:
+        "our Curriculum is contineously update to include the latest music education trends and technologys, ensuring you are always learning with the most current and effective methods. Say goodbye  to outdated materials and welcome an education that evolves with inndusyery  ",
+      content: (
+        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+          Running out of content
+        </div>
+      ),
+    },
   ];
   
  
