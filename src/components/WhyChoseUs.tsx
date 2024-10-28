@@ -4,9 +4,9 @@ import { StickyScroll } from "./ui/sticky-scroll-reveal";
 // import Image from "next/image";
 const content = [
     {
-      title: "Collaborative Editing Collaborative Editing Collaborative",
+      title: "Discover Your Sound With Us : A personal Journey in Music Mastery ",
       description:
-        "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+        "Embark on a musical journey thats uniquely  our personalized instruction adapts to your individual needs, setting the stage for unparalleled growth and creativity. At our  music school , your anspiration meet dedicated support , creating  a harmonious path of mastery ",
       content: (
         <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
           Collaborative Editing
@@ -14,9 +14,10 @@ const content = [
       ),
     },
     {
-      title: "Real time changes",
+      title: "Discover Your Sound With Us : A personal Journey in Music Mastery",
       description:
-        "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+        "Embark on a musical journey thats uniquely  our personalized instruction adapts to your individual needs, setting the stage for unparalleled growth and creativity. At our  music school , your anspiration meet dedicated support , creating  a harmonious path of mastery ",
+        
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
          
@@ -24,9 +25,9 @@ const content = [
       ),
     },
     {
-      title: "Version control",
+      title: "Live Feedback & Engagement ",
       description:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+        "immerse Yourself  in an interactive learning experience Where feedack is immediate, just like real time changes in a collaborate project. This approach enhance your understanding and mastery of music Concepts and performence techniques ",
       content: (
         <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
           Version control
@@ -34,9 +35,9 @@ const content = [
       ),
     },
     {
-      title: "Running out of content",
+      title: "Limitless Learning opportunities",
       description:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+        "With Our Expensive Resourse Library and dynamic course offering , you  will never find youself without something new to explore. Our platfrom provides contineous opportunities for growth, ensuring your musical skills are always advancing.",
       content: (
         <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
           Running out of content
