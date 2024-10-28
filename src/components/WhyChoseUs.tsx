@@ -3,16 +3,7 @@ import React from "react";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
 // import Image from "next/image";
 const content = [
-    {
-      title: "Discover Your Sound With Us : A personal Journey in Music Mastery ",
-      description:
-        "Embark on a musical journey thats uniquely  our personalized instruction adapts to your individual needs, setting the stage for unparalleled growth and creativity. At our  music school , your anspiration meet dedicated support , creating  a harmonious path of mastery ",
-      content: (
-        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-          Collaborative Editing
-        </div>
-      ),
-    },
+    
     {
       title: "Discover Your Sound With Us : A personal Journey in Music Mastery",
       description:
