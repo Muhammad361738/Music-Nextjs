@@ -10,13 +10,13 @@ const quotesArray = [
       quote: "Music expresses that which cannot be put into words and that which cannot remain silent. It brings forth emotions and passions that lie dormant, resonating in the depths of our soul and offering a voice to feelings we cannot articulate.",
       name: "Victor Hugo",
       title: "Novelist and Poet",
-      Link : "/t4"
+      
     },
     {
       quote: "Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything. It unites us across boundaries, ignites the spirit of creativity, and allows us to explore the world within and around us.",
       name: "Plato",
       title: "Philosopher",
-      Link : "cnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+      
     },
     {
       quote: "The true beauty of music is that it connects people. It carries a message, and we, the musicians, are the messengers. Through each note, we reach beyond words to inspire, comfort, and bring joy, fostering connections that cannot be described by language alone.",
@@ -28,14 +28,14 @@ const quotesArray = [
       quote: "Learning to play music is not just about understanding scales and notes; its about discovering patience, resilience, and joy in practice. The dedication to mastering an instrument mirrors the dedication we need in life, making us better, more focused individuals.",
       name: "Anonymous",
       title: "Music Educator",
-      Link : "cnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+      
       
     },
     {
       quote: "A music school is not merely a place to learn instruments but a sanctuary for growth and self-expression. Here, each student learns to channel their thoughts, challenges, and dreams through sound, crafting a unique language that speaks directly to the heart.",
       name: "Leonard Bernstein",
       title: "Composer and Conductor",
-      Link : "cnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+      
     }
   ];
   
