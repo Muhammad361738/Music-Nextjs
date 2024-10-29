@@ -1,6 +1,7 @@
 import FeaturedCourses from "@/components/FeaturedCourses";
 import HeroSection from "@/components/HeroSection";
 import TestCards from "@/components/TestCards";
+import UpcomingWeb from "@/components/UpcomingWeb";
 import WhyChoseUs from "@/components/WhyChoseUs";
 import { main } from "framer-motion/client";
 import Image from "next/image";
@@ -12,6 +13,7 @@ export default function Home() {
       <FeaturedCourses/>
       <WhyChoseUs/>
       <TestCards/>
+      <UpcomingWeb/>
     </main>
 
   );
