@@ -1,48 +1,34 @@
-// import type { Config } from "tailwindcss";
-
-// export default config;
-/** @type {import('tailwindcss').Config} */
-const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 const svgToDataUri = require("mini-svg-data-uri");
 
+
+const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
-function addVariablesForColors({ addBase, theme }: any) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-  );
-  addBase({
-    ":root": newVars,
-  });
-}
 
-
-const config = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}", // Adjust this path based on your folder structure
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
-  darkMode: "class", // Enables dark mode using a class
-
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{ts,tsx}"],
+  darkMode: "class",
   theme: {
-    extend: { // Only one extend property here
+    // rest of the code
+    extend: {
       animation: {
-        spotlight: "spotlight 2s ease .75s 1 forwards",
+        "meteor-effect": "meteor 5s linear infinite",
+
         scroll:
         "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+
+        spotlight: "spotlight 2s ease .75s 1 forwards",
       },
       keyframes: {
-        spotlight: {
-          "0%": {
-            opacity: "0",
-            transform: "translate(-72%, -62%) scale(0.5)",
-          },
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
           "100%": {
-            opacity: "1",
-            transform: "translate(-50%,-40%) scale(1)",
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: "0",
           },
         },
         scroll: {
@@ -50,15 +36,20 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        spotlight: {
+          "0%": {
+            opacity: 0,
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
       },
     },
   },
-  plugins: [ addVariablesForColors,    function ({ matchUtilities, theme }: any) {
+  plugins: [addVariablesForColors,    function ({ matchUtilities, theme }: any) {
     matchUtilities(
       {
         "bg-grid": (value: any) => ({
@@ -79,7 +70,18 @@ const config = {
       },
       { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
     );
-  },  ],
+  },
+],
 };
 
-export default config;
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}
+

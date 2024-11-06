@@ -1,10 +1,11 @@
 import FeaturedCourses from "@/components/FeaturedCourses";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
+import Instructor from "@/components/Instructor";
 import TestCards from "@/components/TestCards";
 import UpcomingWeb from "@/components/UpcomingWeb";
 import WhyChoseUs from "@/components/WhyChoseUs";
-import { main } from "framer-motion/client";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       <WhyChoseUs/>
       <TestCards/>
       <UpcomingWeb/>
+      <Instructor/>
+      <Footer/>
     </main>
 
   );

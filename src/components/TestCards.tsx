@@ -1,6 +1,5 @@
 "use client"
-import Image from "next/image";
-import t4 from "../app/t4.jpg"
+
  
 import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";

@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { StaticImageData } from "next/image";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
@@ -111,8 +110,6 @@ export const InfiniteMovingCards = ({
                   <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
                     {item.title}
                   </span>
-                  
-                 
                 </span>
               </div>
             </blockquote>
